@@ -3,6 +3,7 @@ package com.example.android.loadpicture;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     android.widget.ImageView iv;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.v("start","");
+        TextView tv = (TextView) findViewById(R.id.tv);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
                 iv = findViewById(R.id.aks);
